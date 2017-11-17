@@ -7,5 +7,13 @@
 </ion-header>
 
 <ion-content padding>
+	<h2>Add A User</h2>
+	<form (ngSubmit)='saveUser()'>
+		<ion-item>
+      		<ion-label>Name</ion-label>
+      		<ion-input type="text" [(ngModel)]="user.name" name="name"></ion-input>
+    	</ion-item>
+		  <button ion-button type="submit" block>Add User</button>
+	</form>
 
 </ion-content>
